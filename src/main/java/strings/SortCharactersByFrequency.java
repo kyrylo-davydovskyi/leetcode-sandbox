@@ -1,3 +1,5 @@
+package strings;
+
 import java.util.HashMap;
 
 public class SortCharactersByFrequency {
