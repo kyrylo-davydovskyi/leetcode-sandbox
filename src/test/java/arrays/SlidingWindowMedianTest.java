@@ -19,8 +19,7 @@ public class SlidingWindowMedianTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     public void maximumWealthTest(int[] source, int k, double[] expected) {
-        var executor = new SlidingWindowMedian();
-        var actual = executor.medianSlidingWindow(source, k);
+        var actual = SlidingWindowMedian.medianSlidingWindow(source, k);
 
         assertThat(actual).isEqualTo(expected);
     }

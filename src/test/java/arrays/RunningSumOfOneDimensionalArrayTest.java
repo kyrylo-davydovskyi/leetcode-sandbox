@@ -21,8 +21,7 @@ public class RunningSumOfOneDimensionalArrayTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     public void runningSumTest(int[] source, int[] expected) {
-        var executor = new RunningSumOfOneDimensionalArray();
-        var actual = executor.runningSum(source);
+        var actual = RunningSumOfOneDimensionalArray.runningSum(source);
 
         assertThat(actual).isEqualTo(expected);
     }

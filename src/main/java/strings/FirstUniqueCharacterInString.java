@@ -11,7 +11,7 @@ public class FirstUniqueCharacterInString {
      * @param s 
      * @return first unique char
      */
-    public int firstUniqChar(String s) {
+    public static int firstUniqChar(String s) {
         var symbols = s.toCharArray();
         var score = new HashMap<Character, Integer>();
         for (char symbol : symbols) {

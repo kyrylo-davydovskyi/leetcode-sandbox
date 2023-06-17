@@ -3,8 +3,6 @@ package strings;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import strings.SortCharactersByFrequency;
-
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -25,7 +23,7 @@ public class SortCharactersByFrequencyTest {
     @MethodSource("testArguments")
     public void firstSymbolIsUnique(String line, List<String> expected) {
         var executor = new SortCharactersByFrequency();
-        var actual = executor.frequencySort(line);
+        var actual = SortCharactersByFrequency.frequencySort(line);
 
         assertThat(actual).isIn(expected);
     }

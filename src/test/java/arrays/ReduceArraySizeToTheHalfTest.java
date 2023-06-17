@@ -22,8 +22,7 @@ public class ReduceArraySizeToTheHalfTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     public void minSetSize(int[] source, int expected) {
-        var executor = new ReduceArraySizeToTheHalf();
-        var actual = executor.minSetSize(source);
+        var actual = ReduceArraySizeToTheHalf.minSetSize(source);
 
         assertThat(actual).isEqualTo(expected);
     }

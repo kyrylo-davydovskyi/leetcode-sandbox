@@ -15,7 +15,7 @@ public class ReduceArraySizeToTheHalf {
      * @param arr
      * @return the minimum size of the set
      */
-    public int minSetSize(int[] arr) {
+    public static int minSetSize(int[] arr) {
         var score = new HashMap<Integer, Integer>();
         for (int element : arr) {
             score.merge(element, 1, Integer::sum);

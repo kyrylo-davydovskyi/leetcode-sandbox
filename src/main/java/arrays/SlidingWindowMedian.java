@@ -19,7 +19,7 @@ public class SlidingWindowMedian {
      * @return the median array for each window in the original array
      */    
     //TODO could be improved
-    public double[] medianSlidingWindow(int[] nums, int k) {
+    public static double[] medianSlidingWindow(int[] nums, int k) {
         log.info("Recieved array {}", nums);
         var result = new double[nums.length - k + 1];
         boolean odd = k % 2 > 0;

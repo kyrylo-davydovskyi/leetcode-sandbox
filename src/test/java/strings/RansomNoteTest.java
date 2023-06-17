@@ -6,11 +6,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import lombok.extern.slf4j.Slf4j;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Slf4j
 public class RansomNoteTest {
     
     public static Stream<Arguments> generateTests() {

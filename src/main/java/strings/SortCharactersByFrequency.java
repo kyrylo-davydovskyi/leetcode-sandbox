@@ -12,7 +12,7 @@ public class SortCharactersByFrequency {
      * @param s
      * @return sorted string
      */
-    public String frequencySort(String s) {
+    public static String frequencySort(String s) {
         var symbols = s.toCharArray();
         var score = new HashMap<Character, Integer>();
         for (char symbol : symbols) {

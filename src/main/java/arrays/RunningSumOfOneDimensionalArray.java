@@ -10,7 +10,7 @@ public class RunningSumOfOneDimensionalArray {
      * @param nums
      * @return running sum of nums
      */
-    public int[] runningSum(int[] nums) {
+    public static int[] runningSum(int[] nums) {
         var runningSum = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             for (int j = i; j < nums.length; j++) {
