@@ -4,6 +4,16 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class RansomNote {
+
+    /**
+     * 383. Ransom Note
+     * Given two strings ransomNote and magazine, 
+     * return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+     * Each letter in magazine can only be used once in ransomNote.
+     * @param ransomNote
+     * @param magazine
+     * @return boolean can note be constructed
+     */
     public static boolean canConstruct(String ransomNote, String magazine) {
         if (magazine.length() < ransomNote.length()) {
             return false;

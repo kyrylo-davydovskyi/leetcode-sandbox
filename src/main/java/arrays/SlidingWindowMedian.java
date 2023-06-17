@@ -7,6 +7,17 @@ import java.util.Arrays;
 @Slf4j
 public class SlidingWindowMedian {
 
+
+    /**
+     * 480. Sliding Window Median
+     * You are given an integer array nums and an integer k. 
+     * There is a sliding window of size k which is moving from the very left of the array to the very right. 
+     * You can only see the k numbers in the window. 
+     * Each time the sliding window moves right by one position.
+     * @param nums - array of nums
+     * @param k - sliding window
+     * @return the median array for each window in the original array
+     */    
     //TODO could be improved
     public double[] medianSlidingWindow(int[] nums, int k) {
         log.info("Recieved array {}", nums);

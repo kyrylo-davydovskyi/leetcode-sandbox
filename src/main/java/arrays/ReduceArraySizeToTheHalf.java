@@ -7,6 +7,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ReduceArraySizeToTheHalf {
 
+    /**
+     * 1338. Reduce Array Size to The Half
+     * You are given an integer array arr. You can choose a set of integers and remove 
+     * all the occurrences of these integers in the array.
+     * Return the minimum size of the set so that at least half of the integers of the array are removed.
+     * @param arr
+     * @return the minimum size of the set
+     */
     public int minSetSize(int[] arr) {
         var score = new HashMap<Integer, Integer>();
         for (int element : arr) {

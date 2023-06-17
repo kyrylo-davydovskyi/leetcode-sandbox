@@ -4,6 +4,13 @@ import java.util.HashMap;
 
 public class FirstUniqueCharacterInString {
 
+    /**
+     * 387. First Unique Character in a String
+     * Given a string s, find the first non-repeating character in it and return its index. 
+     * If it does not exist, return -1.
+     * @param s 
+     * @return first unique char
+     */
     public int firstUniqChar(String s) {
         var symbols = s.toCharArray();
         var score = new HashMap<Character, Integer>();
